@@ -1,0 +1,166 @@
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%; /* 1rem=10px */
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/*style*/
+body{
+  /*usar'../'*/
+  background-image: url(https://media.discordapp.net/attachments/656234277373083659/1029184111379750952/fundo-site.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: 'VT323', monospace;
+  color: #f3f3f3;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.cartao{
+  background-color: #070d12;
+  width: 37.0rem;
+  border: 2px solid #e126d9;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.abas img{
+  width: 3rem;
+}
+
+.cartao .minhas-informacoes{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: 1rem;
+}
+
+.cartao .minhas-informacoes img{
+  border-radius: 6rem;
+  border: 4px solid #02d08f;
+}
+
+.cartao .minhas-informacoes .nome{
+  font-size: 2.6rem;
+}
+
+.cartao .minhas-informacoes .cargo{
+  font-size: 2.8rem;
+  color: #b8bbc5;
+}
+
+.cartao .conteudo{
+  margin-top: 1.5rem;
+}
+
+.cartao .abas{
+  display: flex;
+}
+
+.cartao .abas .aba{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{
+  width: 3rem;
+}
+
+.cartao .abas .aba.selecionado{
+  background-color: #262626;
+}
+
+.cartao .informacoes-abas{
+  background-color: #262626;
+}
+
+.cartao .abas .aba:hover{
+  background-color: #414141;
+  cursor: pointer;
+}
+
+.informacoes-abas .informacao{
+  min-height: 26rem;
+  padding: 1rem;
+  display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+  display: block;
+}
+
+.informacoes-abas .sub-titulo{
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.informacoes-abas .descricao{
+  font-size: 2rem;
+  max-height: 18rem;
+  overflow-y: auto;
+  padding-right: 2rem;
+}
+
+.informacoes-abas .descricao spam{
+  color: #02d08f;
+}
+
+.redes-sociais{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.redes-sociais li a{
+  background-color: red;
+  width: 25rem;
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.redes-sociais li a:hover{
+  opacity: 0.8;
+}
+
+.redes-sociais .curriculo{
+  background-color: #06c185;
+}
+
+.redes-sociais .linkedin{
+  background-color: #1d87bd;
+}
+
+.redes-sociais .github{
+  background-color: #545454;
+}
